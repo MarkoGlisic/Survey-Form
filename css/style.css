@@ -73,6 +73,9 @@ label {
     padding-left: 10px;
 }
 
+
+/* INPUT AND PLACEHOLDER Styles */
+
 input:focus::placeholder {
     color: transparent;
 }
@@ -90,6 +93,12 @@ textarea::placeholder {
 
 }
 
+input[type=checkbox] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
 input[type=text],
 input[type=email],
 input[type=number],
@@ -102,7 +111,7 @@ select {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 1.5rem;
-  }
+}
 
 .form-control {
     width: 95%;
@@ -122,11 +131,6 @@ select {
     height: 100%;
 }
 
-input[type=checkbox] {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-}
 
 #check-text {
     padding-bottom: 2px;
@@ -160,6 +164,7 @@ input[type=checkbox] {
 
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+
 @media (min-width:600px) { 
     label {
         margin-left: 5px;
@@ -167,20 +172,25 @@ input[type=checkbox] {
 }
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
+
 @media (min-width:801px) { 
     label {
         margin-left: 9px;
     }
- }
+}
 
  /* big landscape tablets, laptops, and desktops */
+
 @media (min-width:1025px) { 
     #survey-form {
         width: 720px;
         margin: 0 auto;
     }
- }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+}
+
+ /* hi-res laptops and desktops */ 
+
+@media (min-width:1281px) { }
 
 
 
